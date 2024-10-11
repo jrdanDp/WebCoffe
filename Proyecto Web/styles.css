@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    
+    font-family: "Bebas Neue", cursive;
+    background-color: rgba(0, 0, 0, 0.952);
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url(image/Fondo-Menu.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+        
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 125px;
+    height: auto;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size:  20px;
+    padding: 20px;
+    color: white;
+    display: block;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: brown;
+}
+
+#menu {
+    display: none;
+}
+.menu-icon {
+    width: 40px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: rgba(214, 211, 199, 0.932);
+    margin-bottom: 18px;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: rgba(192, 191, 187, 0.836);
+    margin-bottom: 80px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 8px 25px;
+    color: rgb(49, 49, 48);
+    background-color: white;
+    border-radius: 20px ;
+    font-size:  22px;
+}
+
+.btn-1:hover{
+    background-color: rgba(196, 185, 138, 0.747);
+}
+
+.nosotros {
+    padding: 100px 0px;
+    display: flex;
+    margin-bottom: 80px;
+
+}
+
+.nosotros-txt {
+    width: 50%;
+}
+
+.nosotros-img {
+
+    width: 50%;
+}
+
+.nosotros-img img {
+    width: 470px;
+}
+
+.nosotros-txt h2 {
+    font-size: 70px;
+    color: #fefcfb;
+    margin-bottom: 18px;
+}
+
+.nosotros-txt p {
+    font-size: 16px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.bg-mision-vision {
+    background-color: rgb(36, 35, 35);
+}
+
+.mision {
+
+    padding: 100px 0px;
+    display: flex;
+    margin-bottom: -120px;
+    
+}
+
+.mision-txt {
+    width: 50%;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.mision-img {
+    width: 50%;
+    margin-left: 60px;
+}
+
+.mision-img img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s easem box-shadow 0.3s ease;
+}
+
+.mision-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20 px rgba(0,0,0,0.7);
+}
+
+.mision-txt h3 {
+    font-size: 70px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+.mision-txt p {
+    font-size: 16px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+
+.vision {
+    padding: 100px 0px;
+    display: flex;
+    
+}
+
+.vision-txt {
+    width: 50%;
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.vision-img {
+    width: 50%;
+    margin-left: 60px;
+}
+
+.vision-img img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s easem box-shadow 0.3s ease;
+}
+.vision-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20 px rgba(0,0,0,0.7);
+}
+
+.vision-txt h3 {
+    font-size: 70px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+.vision-txt p {
+    font-size: 16px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+
+
+.valores-titulo {
+    font-size: 70px;
+    color: aliceblue;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 50px 0;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.valor {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.valor h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.valor p {
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 1;
+}
+
+.valor:hover {
+    height: 250px; 
+}
+
+.valor:hover p {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.valor:hover h3 {
+    transform: translateY(-50px); 
+}
+
+
+
+
+
+
+@media(max-width:991px) {
+    
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #09080d;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 120px 30px;
+    }
+
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 70 px;
+        line-height: 80 px;
+    }
+
+    .nosotros {
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+
+    .nosotros-txt {
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .nosotros-img {
+
+        width: 100%;
+        order: 2;
+        text-align: center;
+        margin-bottom: 25px;
+
+    }
+
+    .nosotros-img img {
+        width:  350px;
+    }
+
+    .valores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+
+
+}
